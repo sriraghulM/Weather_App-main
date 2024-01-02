@@ -1,0 +1,37 @@
+<!-- Weather App -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather_App</title>
+    <link rel="icon" href="./animated/rainy-2.svg">
+   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+   integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+   crossorigin=""/>
+</head>
+<body>
+    <!-- container for map -->
+    <div id="map"></div>
+    <!-- container for displaying the location and weather -->
+    <div class="container">
+        <div id="locationName">Chennai</div>
+        <div id="icon"></div>
+        <div id="discription">Cloud</div>
+        <div id="temp">32 <sup>oc</sup></div>
+        <div id="subTemp">
+            <span id="minTemp">20 <sup>oc</sup></span>
+            <span id="maxTemp">40 <sup>oc</sup></span>
+        </div>
+        <div id="windSpeed">120 km.hr</div>
+    </div>
+    <!-- To link the script file -->
+    <script src="./script.js"></script>
+    <!-- Script from leaflet.js for map -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+</body>
+</html>
